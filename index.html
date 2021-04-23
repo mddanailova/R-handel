@@ -8,18 +8,28 @@
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-<script src="main.js"></script>
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+</script>
 </head>
 
 <div class="chat-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
-    <h1>Chat</h1>
+    <h1>Online chat</h1>
 
-    <label for="msg"><b>Message</b></label>
+    <label for="msg"><b>Din besked</b></label>
     <textarea placeholder="Type message.." name="msg" required></textarea>
 
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  <div class="knapper">
+    <button type="button" class="btn cancel" onclick="closeForm()">Luk</button>
+      <button type="submit" class="btn">Send</button>
+    </div>
   </form>
 </div>
 </html>
