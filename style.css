@@ -1,5 +1,6 @@
-
-
+body {
+  font-family: 'Roboto', sans-serif;
+}
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
   background-color: beige;
@@ -20,7 +21,7 @@
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
+  max-width: 400px;
   padding: 10px;
   background-color: white;
 }
@@ -46,7 +47,7 @@
 .form-container .btn {
   background-color: #D2C1B3;
   color: white;
-  padding: 16px 20px;
+  padding: 16px 16px;
   border: none;
   cursor: pointer;
   width: 100%;
