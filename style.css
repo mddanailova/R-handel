@@ -80,3 +80,15 @@ h1 {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+input#msg {
+  width: 100%;
+  margin-top: 5px;
+}
+
+#messageArea{
+  width: 275px;
+  height: 300px;
+  border: 2px;
+  border-style: groove;
+}
