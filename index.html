@@ -21,7 +21,9 @@ function sendMessage(){
   var message = document.getElementById("msg").value;
   document.getElementById("messageArea").innerHTML += '<p> '+ message +'</p>';
 }
+
 </script>
+
 </head>
 <body>
   <button class="open-button" onclick="openForm()">Chat med os</button>
@@ -34,9 +36,9 @@ function sendMessage(){
 
       </div><br>
 
-      <input type="text" placeholder="Type message.." name="msg" id="msg" required></input><br><br>
+      <input type="text" placeholder="Skriv en besked ..." name="msg" id="msg" required></input><br><br>
 
-      <button type="button" class="btn" onclick="sendMessage()">Send</button>
+      <button type="button" class="btn" id="myBtn" onclick="sendMessage()">Send</button>
       <button type="button" class="btn cancel" onclick="closeForm()">Luk</button>
     </form>
 </body>

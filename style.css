@@ -4,7 +4,6 @@ body {
 
 h1 {
   font-size: 1.5em;
-  margin-bottom: 4px;
 }
 
 * {box-sizing: border-box;}
@@ -81,9 +80,14 @@ h1 {
   opacity: 1;
 }
 
+p {
+  text-align: right;
+  padding-right: 9px;
+}
+
 input#msg {
   width: 100%;
-  margin-top: 5px;
+  padding: 4px;
 }
 
 #messageArea{
