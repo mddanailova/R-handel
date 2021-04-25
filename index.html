@@ -8,24 +8,10 @@
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-
-function sendMessage(){
-  var message = document.getElementById("msg").value;
-  document.getElementById("messageArea").innerHTML += '<p> '+ message +'</p>';
-}
-
-</script>
-
 </head>
+
 <body>
+
   <button class="open-button" onclick="openForm()">Chat med os</button>
 
   <div class="chat-popup" id="myForm">
@@ -41,5 +27,32 @@ function sendMessage(){
       <button type="button" class="btn" id="myBtn" onclick="sendMessage()">Send</button>
       <button type="button" class="btn cancel" onclick="closeForm()">Luk</button>
     </form>
+
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+
+    function sendMessage(){
+      var message = document.getElementById("msg");
+      document.getElementById("messageArea").innerHTML += '<p> '+ message.value +'</p>';
+      // Clear message in input field
+      message.value = '';
+    }
+
+    document.querySelectorAll('.form-container')[0].addEventListener('submit', function(e) {
+        // Stop form from submitting
+        e.preventDefault();
+
+        // Send Message
+        sendMessage();
+    });
+
+      </script>
+
 </body>
 </html>
